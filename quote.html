@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>    
+    <header></header>
+    <h2>Get your Quotation</h2> 
+    <main>        
+        <h3>Tell us your detail</h3>
+        <form class="contactform">
+            <label for="contactinput" class="contactlabel">First Name</label>
+            <input type="text" name="firstname" id="contactinput"
+                placeholder="firstname" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <label for="contactinput" class="contactlabel">Last Name</label>
+            <input type="text" name="lastname" class="contactinput"
+                placeholder="lastname" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <label for="contactinput" class="contactlabel">Your prescription detail</label>    
+            <input type="text" class="contactinput" name="prescription"
+                placeholder="Enter your prescription detail"
+                required>
+            <label for="contactinput" class="contactlabel">Email</label>
+            <input type="email" name="email" class="contactinput"
+                placeholder="Input your email" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <input type="submit" value="submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

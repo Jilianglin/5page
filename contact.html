@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header></header>
+    <h2>Contact us</h2> 
+    <main>    
+        <h3>Log your interest</h3>   
+        <form class="contactform">
+            <label for="contactinput" class="contactlabel">First Name</label>
+            <input type="text" name="firstname" id="contactinput"
+                placeholder="firstname" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <label for="contactinput" class="contactlabel">Last Name</label>
+            <input type="text" name="lastname" class="contactinput"
+                placeholder="lastname" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <label for="contactinput" class="contactlabel">Email</label>
+            <input type="email" name="email" class="contactinput"
+                placeholder="Input your email" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="32"               
+                required>
+            <label for="contactinput" class="contactlabel">Message</label>
+            <input type="text" name="message" class="contactinput"
+                placeholder="Write your message" 
+                pattern="[[A-Za-z '-']{2,32}]" 
+                maxlength="320"               
+                required>
+            <label for="agree">Join our email list</label>
+            <input type="checkbox" name="agree" id="agree">
+            <label for="disagree">Unsubscribe our email list</label>
+            <input type="checkbox" name="disagree" id="disagree">
+            <input type="submit" value=Submit>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
